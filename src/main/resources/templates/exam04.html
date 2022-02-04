@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<h1>ユーザ登録</h1>
+	<form action="finished" th:action="@{/exam04/input}" method="post"
+		th:object="${exam04Form}">
+		<label for="name">名前：</label> <input id="name" type="text" name="name"
+			th:field="*{name}"> <br> <label for="age">年齢：</label> <input
+			id="age" type="text" name="age" th:field="*{age}"> <br>
+		<label for="comment">コメント:</label> <br>
+		<textarea id="comment" name="comment" rows="4" cols="40"
+			th:field="*{comment}"></textarea>
+		<br>
+		<button>登録</button>
+	</form>
+</body>
+</html>
