@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<h1>足し算結果</h1>
+	<span th:text="${session.num1}">00</span>+
+	<span th:text="${session.num2}">00</span>=
+	<span th:text="${session.num1+session.num2}">00</span>
+
+	<a href="exam02-result2.html" th:href="@{/exam02/to-page2}">次へ</a>
+</body>
+</html>
