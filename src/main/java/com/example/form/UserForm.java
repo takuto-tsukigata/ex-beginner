@@ -1,5 +1,7 @@
 package com.example.form;
 
+import javax.validation.constraints.NotBlank;
+
 public class UserForm {
 
 	public String getName() {
@@ -30,7 +32,10 @@ public class UserForm {
 		return Integer.parseInt(age);
 	}
 
+	@NotBlank(message = "名前は必須です")
 	private String name;
+	@NotBlank(message = "年齢は必須です")
 	private String age;
+	@NotBlank(message = "コメントは必須です")
 	private String comment;
 }
