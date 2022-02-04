@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<p>検索結果</p>
+
+	<div th:each="name:${names}">
+		<span th:text="${name}"></span> <br>
+	</div>
+</body>
+</html>
