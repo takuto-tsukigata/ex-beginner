@@ -29,7 +29,6 @@ public class Exam05Controller {
 		model.addAttribute("name", repository.findByName(name));
 
 		List<Member> nameList = repository.findByName(name);
-//				.stream().map(s -> s.getName()).collect(Collectors.toList());
 
 		model.addAttribute("names", nameList);
 
